@@ -68,9 +68,11 @@ For i = 2 To NumRows
       Range("J" & TickerRowStart).Value = YearlyChange 'This prints the Yearly Change to the summary table
             
             'Need this if statement to avoid div/0 error for Percent formula when OpenPrice is 0
-            If (OpenPrice = 0) Then
+            If (OpenPrice = 0 And ClosePrice = 0) Then
+                    PercentChange = 0
+            ElseIf (OpenPrice = 0 And ClosePrice > 0) Then
                     PercentChange = 1
-                Else
+            Else
                     PercentChange = YearlyChange / OpenPrice
             End If
 
