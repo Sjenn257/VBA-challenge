@@ -75,7 +75,7 @@ For i = 2 To NumRows
             
             'Need this if statement to avoid div/0 error for Percent formula when OpenPrice is 0
             If (OpenPrice = 0) Then
-                    PercentChange = 0
+                    PercentChange = 1
                 Else
                     PercentChange = YearlyChange / OpenPrice
             End If
