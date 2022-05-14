@@ -1,6 +1,6 @@
-# VBA-challenge
+# Excel VBA Scripting
 
-For this VBA Challenge, attached you should find a screenshot for each year of results in the Multi Year Stock Data file provided (2014-2016).
+There is a screenshot for each year of results used in the Multi Year Stock Data file (2014-2016).
 
 In addition, there are 3 VBA Script files:
 
